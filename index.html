@@ -3,11 +3,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stylesheet/style.css">
-        <script src="javascript/jquery-3.6.3.slim.min.js" charset="utf-8"></script>
-        <script src="javascript/main.js"></script>
+        
         <title>kva-kva</title>
     </head>
     <body>
+
+        <!-- ВСТУПИТЕЛЬНЫЙ ЭКРАН -->
+        <section class="block1">
         <h1 class="help">Помогите лягушонку преодолеть препятствия в пути!</h1>
         <h1 class="start">НАЧАТЬ</h1>
         <div class="box">
@@ -21,6 +23,56 @@
         <div class="leaf2"></div>
         <div class="leaf3"></div>
         <div class="leaf4"></div>
+    </section>
 
+
+    <!-- ГЛАВНАЯ ИГРА -->
+        <section class="block2">
+
+                <div id="ground"></div>
+                <img id="character">
+                <div class="obstacles">
+                    <div class="obstacle"></div>
+                </div>
+                
+        </section>
+
+        <script src="javascript/jquery-3.6.3.slim.min.js" charset="utf-8"></script>
+        <script src="javascript/main.js"></script>
     </body>
+    
+    <!-- СКРИПТ ВСТУПИТЕЛЬНОГО ЭКРАНА -->
+    
+    <script type="text/javascript">
+
+    function show(shown, hidden) {
+        $('.block1').style.display='block';
+        $('block2').style.display='none';
+        return false;
+    }
+
+        $(document).ready(function(){
+$(".frog").mousemove(function(event) {
+  let eye = $(".eye");
+  let x = (eye.offset().left) + (eye.width() / 2);
+  let y = (eye.offset().top) + (eye.height() / 2);
+  let rad = Math.atan2(event.pageX - x, event.pageY - y);
+  let rot = (rad * (180 / Math.PI) * -1) + 180;
+  eye.css({
+    '-webkit-transform': 'rotate(' + rot + 'deg)',
+    '-moz-transform': 'rotate(' + rot + 'deg)',
+    '-ms-transform': 'rotate(' + rot + 'deg)',
+    'transform': 'rotate(' + rot + 'deg)'
+  });
+});
+})
+
+$(document).ready(() => {
+  $('.start').on('click', () => {
+    $('.block2').show();
+    $('block1').hide();
+  });
+})
+</script>
+
 </html>
