@@ -1,4 +1,61 @@
+// ГЛАВНЫЙ ЭКРАН И СМЕНЫ ЭКРАНА
 
+$(document).ready(function(){
+    $(".frog").mousemove(function(event) {
+      let eye = $(".eye");
+      let x = (eye.offset().left) + (eye.width() / 2);
+      let y = (eye.offset().top) + (eye.height() / 2);
+      let rad = Math.atan2(event.pageX - x, event.pageY - y);
+      let rot = (rad * (180 / Math.PI) * -1) + 180;
+      eye.css({
+        '-webkit-transform': 'rotate(' + rot + 'deg)',
+        '-moz-transform': 'rotate(' + rot + 'deg)',
+        '-ms-transform': 'rotate(' + rot + 'deg)',
+        'transform': 'rotate(' + rot + 'deg)'
+      });
+    });
+    })
+    
+    $(document).ready(() => {
+      $('.start').on('click', () => {
+        $('.block2').show();
+        $('.block1').hide();
+      });
+    })
+
+// ГЛАЗА
+
+$(document).ready(function(){
+    $(".block1").mousemove(function(event) {
+      let eye = $(".eye1");
+      let x = (eye.offset().left) + (eye.width() / 2);
+      let y = (eye.offset().top) + (eye.height() / 2);
+      let rad = Math.atan2(event.pageX - x, event.pageY - y);
+      let rot = (rad * (180 / Math.PI) * -1) + 180;
+      eye.css({
+        '-webkit-transform': 'rotate(' + rot + 'deg)',
+        '-moz-transform': 'rotate(' + rot + 'deg)',
+        '-ms-transform': 'rotate(' + rot + 'deg)',
+        'transform': 'rotate(' + rot + 'deg)'
+      });
+    });
+  })
+
+  $(document).ready(function(){
+    $(".block1").mousemove(function(event) {
+      let eye = $(".eye2");
+      let x = (eye.offset().left) + (eye.width() / 2);
+      let y = (eye.offset().top) + (eye.height() / 2);
+      let rad = Math.atan2(event.pageX - x, event.pageY - y);
+      let rot = (rad * (180 / Math.PI) * -1) + 180;
+      eye.css({
+        '-webkit-transform': 'rotate(' + rot + 'deg)',
+        '-moz-transform': 'rotate(' + rot + 'deg)',
+        '-ms-transform': 'rotate(' + rot + 'deg)',
+        'transform': 'rotate(' + rot + 'deg)'
+      });
+    });
+  })
 // КОД ОСНОВНОЙ ИГРЫ
 
 // персонаж
@@ -36,7 +93,7 @@ isJumping = true;
 
 // препятствия
 
-function generateObstacle(){
+function generateObstacle() {
     let obstacles = document.querySelector('.obstacles');
     let obstacle = document.createElement('div');
     obstacle.setAttribute('class', 'obstacle');
@@ -44,7 +101,7 @@ function generateObstacle(){
     
     let randomTimeout = Math.floor(Math.random() * 1000) + 1000;
     let obstacleRight = -30;
-    let obstacleBottom = -100;
+    let obstacleBottom = 100;
     let obstacleWidth = 30;
     let obstacleHeight = Math.floor(Math.random() * 50) + 50;
     obstacle.style.backgroundColor = Math.floor(Math.random()*16777215).toString(16);
@@ -69,4 +126,5 @@ function control(e) {
         jump()
     }
 }
+document.addEventListener('click', jump);
 document.addEventListener('keydown', control);
