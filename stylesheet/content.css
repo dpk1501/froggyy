@@ -194,9 +194,14 @@ color: #FFFFFF;
 .obstacle {
   position: absolute;
   width: 50px;
-  height: 130px;
+  height: 100px;
   bottom: 150px;
   right: 0;
   
   background: black;
+}
+
+@keyframes slide {
+  0% {left: 100%;}
+  100% {left: -100%;}
 }
