@@ -1,0 +1,137 @@
+body {
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(33,83,21,1) 100%);
+  overflow: hidden;
+  position: relative;
+  font-size: 23vw;
+  line-height: 409px;
+  width: 100vw;
+  height: 100vh;;
+  aspect-ratio: 1 / 2.5;
+}
+
+.frog {
+  background: url('../images/frog.svg');
+  background-size: 100% 100%;
+  width: 42%;
+  height: 94%;
+  position: absolute;
+  top: 9%;
+  left: 28%;
+}
+
+.box {
+  display: flex;
+}
+.box .eye {
+  position: relative;
+  display: block;
+  left: 25%;
+  top: 200px;
+  border-radius: 50%;
+  height: 109px;
+  width: 109px;
+  background-color: #E27018;
+  margin: 0 100px;
+  z-index: 2;;
+}
+.box .eye::before {
+  top: 50%;
+  left: 35px;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  }
+
+.leaf {
+  background: url('../images/leaf.svg');
+  background-size: 100% 100%;
+  position: absolute;
+  width: 14%;
+  height: 19%;
+  right: 12%;
+  top: -2%;
+}
+
+.leaf1 {
+  background: url('../images/leaf1.svg');
+  background-size: 100% 100%;
+  position: absolute;
+  width: 29%;
+  height: 42%;
+  left: -1%;
+  top: -1%;
+} 
+
+.leaf2 {
+  background: url('../images/leaf2.svg');
+  background-size: 100% 100%;
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  left: 58%;
+  bottom: 5%;
+}
+.leaf2:hover {
+  transform: rotate(180deg);
+}
+.leaf3 {
+  background: url('../images/leaf3.svg');
+  background-size: 100% 100%;
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  left: 80%;
+  top: -1%;
+}
+
+.leaf4 {
+  background: url('../images/leaf4.svg');
+  background-size: 100% 100%;
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  left: -10%;
+  bottom: -1%;
+}
+
+
+/* ОСНОВНАЯ ИГРА */
+
+#game {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background-image: url('../images/stars.svg');
+}
+
+#ground{
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  position: absolute;
+  background-color: #4613D8;
+}
+
+#character {
+  background-image: url('../images/character.svg');
+  background-size: cover;
+  width: 88px;
+  height: 82px;
+  position: absolute;
+  bottom: 150px; 
+  right: calc(100% - 100px);
+
+}
+
+.obstacle {
+  position: absolute;
+  width: 50px;
+  height: 130px;
+  bottom: 150px;
+  right: 0;
+  
+  background: black;
+}
