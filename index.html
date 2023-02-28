@@ -9,70 +9,38 @@
     <body>
 
         <!-- ВСТУПИТЕЛЬНЫЙ ЭКРАН -->
-        <section class="block1">
+        <div class="block1">
+
         <h1 class="help">Помогите лягушонку преодолеть препятствия в пути!</h1>
         <h1 class="start">НАЧАТЬ</h1>
         <div class="box">
-            <div class="eye"></div>
-            <div class="eye"></div>
+            <div class="eye1"></div>
+            <div class="eye2"></div>
         </div>
-        <div class="frog"></div></div>
+        <div class="frog"></div>
 
         <div class="leaf"></div>
         <div class="leaf1"></div>
         <div class="leaf2"></div>
         <div class="leaf3"></div>
         <div class="leaf4"></div>
-    </section>
+
+    </div>
 
 
     <!-- ГЛАВНАЯ ИГРА -->
-        <section class="block2">
+        <div class="block2" hidden>
 
                 <div id="ground"></div>
                 <img id="character">
                 <div class="obstacles">
                     <div class="obstacle"></div>
                 </div>
-                
-        </section>
+
+            </div>
 
         <script src="javascript/jquery-3.6.3.slim.min.js" charset="utf-8"></script>
         <script src="javascript/main.js"></script>
     </body>
-    
-    <!-- СКРИПТ ВСТУПИТЕЛЬНОГО ЭКРАНА -->
-    
-    <script type="text/javascript">
-
-    function show(shown, hidden) {
-        $('.block1').style.display='block';
-        $('block2').style.display='none';
-        return false;
-    }
-
-        $(document).ready(function(){
-$(".frog").mousemove(function(event) {
-  let eye = $(".eye");
-  let x = (eye.offset().left) + (eye.width() / 2);
-  let y = (eye.offset().top) + (eye.height() / 2);
-  let rad = Math.atan2(event.pageX - x, event.pageY - y);
-  let rot = (rad * (180 / Math.PI) * -1) + 180;
-  eye.css({
-    '-webkit-transform': 'rotate(' + rot + 'deg)',
-    '-moz-transform': 'rotate(' + rot + 'deg)',
-    '-ms-transform': 'rotate(' + rot + 'deg)',
-    'transform': 'rotate(' + rot + 'deg)'
-  });
-});
-})
-
-$(document).ready(() => {
-  $('.start').on('click', () => {
-    $('.block2').show();
-    $('block1').hide();
-  });
-})
-</script>
 
 </html>
