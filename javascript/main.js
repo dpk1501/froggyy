@@ -95,7 +95,7 @@ isJumping = true;
 
 function generateObstacle() {
     let obstacles = document.querySelector('.obstacles');
-    let obstacle = document.createElement('div');
+    let obstacle = document.createElement('.obstacle');
     obstacle.setAttribute('class', 'obstacle');
     obstacles.appendChild(obstacle);
     
@@ -114,6 +114,9 @@ function moveObstacle(){
     obstacle.style.height = obstacleHeight + 'px';
     if(characterRight >= obstacleRight - characterWidth && characterRight <= obstacleRight + obstacleWidth && characterBottom <= obstacleBottom + obstacleHeight){
         window.location.assign('traffic.html');
+        clearInterval(obstacleInterval);
+        clearTimeout(obstacleTimeout);
+        location.reload();
         }
     }
 let obstacleInterval = setInterval(moveObstacle, 20);
@@ -121,6 +124,18 @@ let obstacleTimeout = setTimeout(generateObstacle, randomTimeout);
    
 }
 
+window.setInterval(function(){
+
+    var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+    
+    $('.obstacle').css({
+      'background-color' : randomColor,
+    });
+
+  }, 2000);
+
+
+// ПРЫЖКИ ПО КЛИКУ И НАЖАТИЮ
 function control(e) {
     if (e.key = 'ArrowUp' || e.key == ' '){
         jump()
