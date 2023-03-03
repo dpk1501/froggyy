@@ -14,7 +14,7 @@ $(document).ready(function(){
         'transform': 'rotate(' + rot + 'deg)'
       });
     });
-    })
+    });
     
     $(document).ready(() => {
       $('.start').on('click', () => {
@@ -62,7 +62,7 @@ $(document).ready(function(){
 
 let character = document.getElementById("character");
 let characterBottom = parseInt(window.getComputedStyle(character).getPropertyValue ('bottom'));
-let characterRight = parseInt(window.getComputedStyle(character).getPropertyValue ('right'));
+let characterLeft = parseInt(window.getComputedStyle(character).getPropertyValue ('left'));
 let characterWidth = parseInt(window.getComputedStyle(character).getPropertyValue ('width'));
 let ground = document.getElementById('ground');
 let groundBottom = parseInt(window.getComputedStyle(ground).getPropertyValue ('bottom'));
@@ -92,27 +92,38 @@ isJumping = true;
 }
 
 // препятствия
+let randomTimeout = Math.floor(Math.random() * 1000) + 1000;
+let obstacleLeft = -30;
+let obstacleBottom = 100;
+let obstacleWidth = 30;
+let obstacleHeight = Math.floor(Math.random() * 50) + 50;
 
 function generateObstacle() {
     let obstacles = document.querySelector('.obstacles');
-    let obstacle = document.createElement('.obstacle');
+    let obstacle = document.createElement('obstacle');
     obstacle.setAttribute('class', 'obstacle');
     obstacles.appendChild(obstacle);
     
     let randomTimeout = Math.floor(Math.random() * 1000) + 1000;
-    let obstacleRight = -30;
+    let obstacleLeft = -30;
     let obstacleBottom = 100;
     let obstacleWidth = 30;
     let obstacleHeight = Math.floor(Math.random() * 50) + 50;
     obstacle.style.backgroundColor = Math.floor(Math.random()*16777215).toString(16);
+}
 
-function moveObstacle(){
-    obstacleRight += 5;
-    obstacle.style.right = obstacleRight + 'px';
+
+function moveObstacle() {
+
+    let obstacle = document.querySelector('.obstacle');
+    obstacleLeft += 5;
+    obstacle.style.left = obstacleLeft + 'px';
     obstacle.style.bottom = obstacleBottom + 'px';
     obstacle.style.width = obstacleWidth + 'px';
     obstacle.style.height = obstacleHeight + 'px';
-    if(characterRight >= obstacleRight - characterWidth && characterRight <= obstacleRight + obstacleWidth && characterBottom <= obstacleBottom + obstacleHeight){
+
+    obstacleLeft = parseInt($(window).width()) - obstacleLeft;
+    if (characterLeft >= obstacleLeft - characterWidth && characterLeft <= obstacleLeft + obstacleWidth && characterBottom <= obstacleBottom + obstacleHeight){
         window.location.assign('traffic.html');
         clearInterval(obstacleInterval);
         clearTimeout(obstacleTimeout);
@@ -121,8 +132,7 @@ function moveObstacle(){
     }
 let obstacleInterval = setInterval(moveObstacle, 20);
 let obstacleTimeout = setTimeout(generateObstacle, randomTimeout);
-   
-}
+
 
 window.setInterval(function(){
 
@@ -143,3 +153,20 @@ function control(e) {
 }
 document.addEventListener('click', jump);
 document.addEventListener('keydown', control);
+
+
+// ПЕРВАЯ МИНИ ИГРА
+
+let one = document.querySelector('.one');
+
+one.addEventListener('click', () => {
+  one.style.backgroundColor = '#CF0000';
+}
+)
+
+const two = document.querySelector('.two');
+
+one.addEventListener('click', () => {
+  one.style.backgroundColor = '#0075FF';
+}
+)
