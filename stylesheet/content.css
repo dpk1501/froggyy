@@ -2,17 +2,23 @@ html {
   cursor: url("../images/default_cursor.svg"), default;
 }
 
-body {
+body, html {
+  width: 100%;
+  height: 900px;
+  font-size: 23vw;
+  line-height: 409px;
+  display: block;
   overflow: hidden;
   font-family: 'Pangolin';
   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(33,83,21,1) 100%);
+  aspect-ratio: 1 / 1;
 }
 
 
 /* ВСТУПИТЕЛЬНЫЙ ЭКРАН */
 .block1 {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: url('../images/stars.svg');
   display: block;
   overflow: hidden;
@@ -20,10 +26,10 @@ body {
 .frog {
   background: url('../images/frog.svg');
   background-size: 100% 100%;
-  width: 42%;
-  height: 94%;
+  width: 615px;
+  height: 847px;
   position: absolute;
-  top: 9%;
+  bottom: 0;
   left: 28%;
 }
 
@@ -187,7 +193,7 @@ color: #FFFFFF;
   height: 82px;
   position: absolute;
   bottom: 150px; 
-  right: calc(100% - 100px);
+  left: 200px;
 
 }
 
@@ -204,4 +210,116 @@ color: #FFFFFF;
 @keyframes slide {
   0% {left: 100%;}
   100% {left: -100%;}
+}
+
+
+/* ПЕРВАЯ МИНИ-ИГРА */
+.block3 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/stars.svg');
+  display: block;
+  overflow: hidden;
+}
+
+.trafficlight {
+  background-image: url('../images/trafficlight.svg');
+  background-size: 100% 100%;
+  position: absolute;
+  width: 44%;
+  height: 94%;
+  left: 10%;
+  bottom: 0;
+}
+
+#red {
+  padding-top: 30%;
+  position: relative;
+  width: 30%;
+  height: auto;
+  left: 37%;
+  top: 10%;
+  border-radius: 50%;
+
+  background: #FF0000;
+}
+#yellow {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  left: 37%;
+  top: 15%;
+  border-radius: 50%;
+
+  background: #FFDB5B;
+}
+#green {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  left: 37%;
+  top: 20%;
+  border-radius: 50%;
+
+  background: #75EE81;
+}
+
+.squarebuttons {
+  position: absolute;
+  width: 15%;
+  height: 25%;
+  left: 66%;
+  top: 7%;
+
+  background: #000000;
+}
+
+.buttonbox {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  top: 5%;
+  left: 10%;
+  z-index: 0;
+}
+.buttonbox1 {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  top: 37%;
+  left: 10%;
+  z-index: 0;
+}
+.buttonbox2 {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  top: 70%;
+  left: 10%;
+  z-index: 0;
+}
+.button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.roundbuttons {
+  position: absolute;
+  width: 15%;
+  height: 25%;
+  left: 66%;
+  top: 40%;
+
+  background: #000000;
+}
+
+.one {
+  background: #D9D9D9;
+}
+.two {
+  background: #D9D9D9;
 }
