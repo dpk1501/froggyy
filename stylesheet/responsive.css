@@ -1,0 +1,49 @@
+/* экран для 1920 */
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    body, html {
+      line-height: 494px;
+      width: 1920px;
+      height: 1080px;
+    }
+  }
+  
+  /* экран для 1440 */
+  @media screen and (min-width: 1280px) and (max-width: 1440px) {
+    body, html {
+      /* height: 477vh; */
+      line-height: 409px;
+      width: 1440px;
+      height: 900px;
+    }
+  }
+  
+  /* экран для 1280 */
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    body, html {
+      /* height: 434vh; */
+      line-height: 356px;
+      width: 1280px;
+      height: 900px;
+    }
+  }
+  
+  /* экран для 1024 */
+@media screen and (min-width: 834px) and (max-width: 1024px) {
+    body, html {
+      /* height: 361vh; */
+      line-height: 294px;
+      width: 1024px;
+    height: 750px;
+    }
+  }
+  
+  /* экран для 834 */
+  @media screen and (min-width: 414px) and (max-width: 834px) {
+  
+    body, html {
+        width: 834px;
+        height: 600px;
+    /* height: 303vh; */
+    line-height: 238px;
+  }
+  }  
