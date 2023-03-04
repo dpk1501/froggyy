@@ -15,13 +15,6 @@ $(document).ready(function(){
       });
     });
     });
-    
-    $(document).ready(() => {
-      $('.start').on('click', () => {
-        $('.block2').show();
-        $('.block1').hide();
-      });
-    })
 
 // ГЛАЗА
 
@@ -93,51 +86,49 @@ isJumping = true;
 
 // препятствия
 let randomTimeout = Math.floor(Math.random() * 1000) + 1000;
-let obstacleLeft = -30;
-let obstacleBottom = 100;
+let obstacleLeft = 2000;
+let obstacleBottom = 150;
 let obstacleWidth = 30;
 let obstacleHeight = Math.floor(Math.random() * 50) + 50;
 
-function generateObstacle() {
-    let obstacles = document.querySelector('.obstacles');
-    let obstacle = document.createElement('obstacle');
-    obstacle.setAttribute('class', 'obstacle');
-    obstacles.appendChild(obstacle);
-    
-    let randomTimeout = Math.floor(Math.random() * 1000) + 1000;
-    let obstacleLeft = -30;
-    let obstacleBottom = 100;
-    let obstacleWidth = 30;
-    let obstacleHeight = Math.floor(Math.random() * 50) + 50;
-    obstacle.style.backgroundColor = Math.floor(Math.random()*16777215).toString(16);
-}
-
 
 function moveObstacle() {
-
     let obstacle = document.querySelector('.obstacle');
-    obstacleLeft += 5;
     obstacle.style.left = obstacleLeft + 'px';
     obstacle.style.bottom = obstacleBottom + 'px';
     obstacle.style.width = obstacleWidth + 'px';
     obstacle.style.height = obstacleHeight + 'px';
 
-    obstacleLeft = parseInt($(window).width()) - obstacleLeft;
+    obstacleLeft -= 5;
+    if (obstacleLeft == 0){
+      obstacleLeft = 2000;
+      let obstacleHeight = Math.floor(Math.random() * 1000);
+    }
+
     if (characterLeft >= obstacleLeft - characterWidth && characterLeft <= obstacleLeft + obstacleWidth && characterBottom <= obstacleBottom + obstacleHeight){
-        window.location.assign('traffic.html');
+        // window.location.assign('traffic.html');
+        $('.block3').show();
+        $('.block2').hide();
+
         clearInterval(obstacleInterval);
         clearTimeout(obstacleTimeout);
         location.reload();
-        }
     }
-let obstacleInterval = setInterval(moveObstacle, 20);
-let obstacleTimeout = setTimeout(generateObstacle, randomTimeout);
+}
+
+$(document).ready(() => {
+  $('.start').on('click', () => {
+    $('.block2').show();
+    $('.block1').hide();
+    let obstacleInterval = setInterval(moveObstacle, 5);
+  });
+})
 
 
 window.setInterval(function(){
 
     var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
-    
+
     $('.obstacle').css({
       'background-color' : randomColor,
     });
@@ -148,11 +139,12 @@ window.setInterval(function(){
 // ПРЫЖКИ ПО КЛИКУ И НАЖАТИЮ
 function control(e) {
     if (e.key = 'ArrowUp' || e.key == ' '){
-        jump()
+        jump();
     }
 }
 document.addEventListener('click', jump);
 document.addEventListener('keydown', control);
+
 
 
 // ПЕРВАЯ МИНИ ИГРА
@@ -166,7 +158,7 @@ one.addEventListener('click', () => {
 
 const two = document.querySelector('.two');
 
-one.addEventListener('click', () => {
-  one.style.backgroundColor = '#0075FF';
+two.addEventListener('click', () => {
+  two.style.backgroundColor = '#0075FF';
 }
 )
