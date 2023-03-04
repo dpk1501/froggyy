@@ -375,15 +375,24 @@ height: auto;
   background: #000000;
 }
 
-.pull {
+#pull {
   position: absolute;
-  width: 146px;
-  height: 24px;
-  left: 1006px;
-  top: 766px;
+  width: 15%;
+  height: 70%;
+  left: 13%;
+  top: 15%;
   
   background: #FFFFFF;
-  transform: rotate(-90deg);
+}
+
+#bar {
+  background-image: url(../images/bar.svg);
+  background-size: 100% 100%;
+  position: absolute;
+  width: 75%;
+  height: 50%;
+  left: 13%;
+  top: 24%;
 }
 
 #froggy {

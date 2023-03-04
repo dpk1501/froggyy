@@ -106,7 +106,6 @@ function moveObstacle() {
     }
 
     if (characterLeft >= obstacleLeft - characterWidth && characterLeft <= obstacleLeft + obstacleWidth && characterBottom <= obstacleBottom + obstacleHeight){
-        // window.location.assign('traffic.html');
         $('.block3').show();
         $('.block2').hide();
 
@@ -148,17 +147,23 @@ document.addEventListener('keydown', control);
 
 
 // ПЕРВАЯ МИНИ ИГРА
+  
 
-let one = document.querySelector('.one');
-
-one.addEventListener('click', () => {
+let one = document.querySelectorAll('.one');
+one.forEach(function(numberone) {
+  numberone.addEventListener("click", function() {
   one.style.backgroundColor = '#CF0000';
-}
-)
+});
+});
 
-const two = document.querySelector('.two');
 
-two.addEventListener('click', () => {
+let two = document.getElementsByClassName('.two');
+two.forEach(function(numbertwo) {
+  numbertwo.addEventListener('click', () => {
   two.style.backgroundColor = '#0075FF';
-}
-)
+});
+});
+
+// $( function() {
+//   $( "#pull" ).draggable();
+// } );
