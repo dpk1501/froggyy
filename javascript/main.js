@@ -148,13 +148,12 @@ document.addEventListener('keydown', control);
 
 // ПЕРВАЯ МИНИ ИГРА
   
+document.getElementById('one').onclick = changeColor;   
 
-let one = document.querySelectorAll('.one');
-one.forEach(function(numberone) {
-  numberone.addEventListener("click", function() {
-  one.style.backgroundColor = '#CF0000';
-});
-});
+function changeColor() {
+    document.body.style.color = "purple";
+    return false;
+}  
 
 
 let two = document.getElementsByClassName('.two');
@@ -164,6 +163,10 @@ two.forEach(function(numbertwo) {
 });
 });
 
-// $( function() {
-//   $( "#pull" ).draggable();
-// } );
+$(function() {
+  $("#pull").draggable();
+} );
+
+
+// ВТОРАЯ МИНИ ИГРА
+
