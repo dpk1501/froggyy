@@ -416,22 +416,21 @@ height: auto;
   overflow: hidden;
 }
 
-.frogcharacter {
-    background-image: url('../images/character.svg');
-    background-size: cover;
-    width: 88px;
-    height: 82px;
-    position: absolute;
-    bottom: 0; 
-    right: 50%;
-
+.player {
+  background-image: url('../images/character.svg');
+  background-size: cover;
+  width: 88px;
+  height: 82px;
+  position: absolute;
+  bottom: 0; 
+  right: 50%;
 }
 
-.triangle {
-  background-image: url('..images/triangle.svg');
+.cell, .enemy {
+  background-image: url('../images/triangle.svg');
   background-size: 100% 100%;
-  width: 20%;
-  height: 20%;
+  width: 10%;
+  height: 10%;
   position: absolute;
   top: 2%;
   left: 10%;
