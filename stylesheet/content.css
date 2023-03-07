@@ -409,29 +409,51 @@ height: auto;
 /* ТРЕТЬЯ МИНИ ИГРА */
 
 .block4 {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: url('../images/stars.svg');
   display: hidden;
   overflow: hidden;
 }
 
-.player {
-  background-image: url('../images/character.svg');
-  background-size: cover;
-  width: 88px;
-  height: 82px;
-  position: absolute;
-  bottom: 0; 
-  right: 50%;
+.header {
+  padding-bottom: 5px;
+  color: #ffffff;
+  font-family: sans-serif;
 }
 
-.cell, .enemy {
+.grid {
+  display: inline-grid;
+  grid-template-columns: repeat(200, 10%);
+  grid-template-rows: repeat(200, 10%);
+  gap: 5px;
+}
+
+.cell {
+  height: 30px;
+}
+
+.enemy {
+  position: absolute;
+  top: 10%;
+  left: 10%;
   background-image: url('../images/triangle.svg');
+  background-size: 100% 100%;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+}
+
+.enemy {
+  background: #f31414;
+}
+
+.player {
+  background-image: url('../images/character.svg');
   background-size: 100% 100%;
   width: 10%;
   height: 10%;
   position: absolute;
-  top: 2%;
-  left: 10%;
+  bottom: 0;
+  left: 45%;
 }
