@@ -146,7 +146,14 @@ document.addEventListener('keydown', control);
   
 $(function() {
   $('.one').click(function(){
-    $(this).css('background', 'yellow');
+    $(this).css('background', 'red');
+
+  });
+} );
+
+$(function() {
+  $('.two').click(function(){
+    $(this).css('background', 'blue');
 
   });
 } );
