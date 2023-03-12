@@ -365,6 +365,7 @@ height: auto;
 }
 
 .lever {
+  display: hidden;
   position: absolute;
   padding-top: 14%;
   width: 14%;
@@ -416,23 +417,6 @@ height: auto;
   overflow: hidden;
 }
 
-.header {
-  padding-bottom: 5px;
-  color: #ffffff;
-  font-family: sans-serif;
-}
-
-.grid {
-  display: inline-grid;
-  grid-template-columns: repeat(200, 10%);
-  grid-template-rows: repeat(200, 10%);
-  gap: 5px;
-}
-
-.cell {
-  height: 30px;
-}
-
 .enemy {
   position: absolute;
   top: 10%;
@@ -441,11 +425,6 @@ height: auto;
   background-size: 100% 100%;
   width: 20%;
   height: 20%;
-  border-radius: 50%;
-}
-
-.enemy {
-  background: #f31414;
 }
 
 .player {

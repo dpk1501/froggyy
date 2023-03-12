@@ -158,8 +158,10 @@ $(function() {
   });
 } );
 
-$(function() {
-  $("#pull").draggable();
+$( function() {
+  $( "#pull" ).draggable({
+    containment: "#bar"
+  }); 
 } );
 
 
