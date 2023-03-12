@@ -108,10 +108,6 @@ function moveObstacle() {
     if (characterLeft >= obstacleLeft - characterWidth && characterLeft <= obstacleLeft + obstacleWidth && characterBottom <= obstacleBottom + obstacleHeight){
         $('.block3').show();
         $('.block2').hide();
-
-        clearInterval(obstacleInterval);
-        clearTimeout(obstacleTimeout);
-        location.reload();
     }
 }
 
@@ -148,20 +144,12 @@ document.addEventListener('keydown', control);
 
 // ПЕРВАЯ МИНИ ИГРА
   
-document.getElementById('one').onclick = changeColor;   
+$(function() {
+  $('.one').click(function(){
+    $(this).css('background', 'yellow');
 
-function changeColor() {
-    document.body.style.color = "purple";
-    return false;
-}  
-
-
-let two = document.getElementsByClassName('.two');
-two.forEach(function(numbertwo) {
-  numbertwo.addEventListener('click', () => {
-  two.style.backgroundColor = '#0075FF';
-});
-});
+  });
+} );
 
 $(function() {
   $("#pull").draggable();
