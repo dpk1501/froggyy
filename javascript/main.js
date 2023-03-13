@@ -143,11 +143,6 @@ document.addEventListener('keydown', control);
 
 
 // ПЕРВАЯ МИНИ ИГРА
-$('#red') = setTimeout (() => {
-  setInterval(function(){
-    $(this).css('background', 'grey');
-  }, 2900);
-});
 
 setInterval(function(){
   $('#yellow').css('background', 'yellow');
@@ -192,10 +187,7 @@ $( function() {
   }); 
 } );
 
-$('.one' && '.two' && '.white' && '.orange' && '.lime' && '.green').click(function(){
-  $('.block3').hide();
-  $('.block2').show();
-});
+
 
 
 
