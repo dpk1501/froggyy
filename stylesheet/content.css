@@ -239,8 +239,8 @@ color: #FFFFFF; }
   left: 37%;
   top: 13%;
   border-radius: 50%;
-
-  background: #FFDB5B;
+  background: #D9D9D9;
+  /* background: #FFDB5B; */
 }
 #green {
   padding-top: 25%;
@@ -250,8 +250,40 @@ color: #FFFFFF; }
   left: 37%;
   top: 15%;
   border-radius: 50%;
+  background: #D9D9D9;
 
-  background: #75EE81;
+  /* background: #75EE81; */
+}
+
+.speechbubble {
+  background-image: url('../images/speechbubble.svg');
+  background-size: 100% 100%;
+  position: absolute;
+  width: 30%;
+  height: 15%;
+  right: 10%;
+  bottom: 18%;
+  z-index: 3;
+}
+.cross {
+  background-image: url('../images/cross.svg');
+  background-size: 100% 100%;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  right: 11%;
+  bottom: 78%;
+  z-index: 4;
+}
+.hurry {
+  position: absolute;
+  bottom: 55%;
+  left: 24%;
+  font-family: 'Pangolin';
+  font-weight: 400;
+  font-size: 7%;
+  line-height: 100%;
+  z-index: 4;
 }
 
 .squarebuttons {
@@ -326,47 +358,43 @@ height: auto;
 }
 
 .white {
-  background-image: url('../images/white.svg');
-  background-size: 100% 100%;
-  padding-top: 28%;
+
+  padding-top: 10%;
   width: 28%;
   height: auto;
   left: 10%;
-  top: 8%
+  top: 3%;
 }
 .orange {
-  background-image: url('../images/orange.svg');
-  background-size: 100% 100%;
-  padding-top: 28%;
+ 
+  padding-top: 10%;
   width: 28%;
   height: auto;
   left: 60%;
-  top: 8%;
+  top: 3%;
 }
 
 .lime {
-  background-image: url('../images/lime.svg');
-  background-size: 100% 100%;
-  padding-top: 28%;
+
+  padding-top: 10%;
   width: 28%;
   height: auto;
   left: 10%;
-  top: 60%;
+  top: 50%;
 }
 
 .green {
-  background-image: url('../images/green.svg');
-  background-size: 100% 100%;
-  padding-top: 28%;
+
+  padding-top: 10%;
   width: 28%;
   height: auto;
   left: 60%;
-  top: 60%;
+  top: 50%;
 }
 
 .lever {
   display: hidden;
-  position: absolute;
+  position: fixed;
   padding-top: 14%;
   width: 14%;
   height: auto;
@@ -409,7 +437,7 @@ height: auto;
 
 /* ТРЕТЬЯ МИНИ ИГРА */
 
-.block4 {
+.block5 {
   width: 100%;
   height: 100%;
   background-image: url('../images/stars.svg');
@@ -417,14 +445,52 @@ height: auto;
   overflow: hidden;
 }
 
-.enemy {
+#enemy1 {
   position: absolute;
   top: 10%;
   left: 10%;
   background-image: url('../images/triangle.svg');
   background-size: 100% 100%;
-  width: 20%;
-  height: 20%;
+  width: 10%;
+  height: 10%;
+}
+#enemy2 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-image: url('../images/triangle.svg');
+  background-size: 100% 100%;
+  width: 10%;
+  height: 10%;
+}
+#enemy3 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-image: url('../images/triangle.svg');
+  background-size: 100% 100%;
+  width: 10%;
+  height: 10%;
+}
+
+#enemy4 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-image: url('../images/triangle.svg');
+  background-size: 100% 100%;
+  width: 10%;
+  height: 10%;
+}
+
+#enemy5 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-image: url('../images/triangle.svg');
+  background-size: 100% 100%;
+  width: 10%;
+  height: 10%;
 }
 
 .player {
@@ -436,3 +502,36 @@ height: auto;
   bottom: 0;
   left: 45%;
 }
+
+
+.block5 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/stars.svg');
+  display: hidden;
+  overflow: hidden;
+}
+
+.sadfrog {
+  background: url('../images/sadfrog.svg');
+  background-size: 100% 100%;
+  width: 42%;
+  height: 94%;
+  position: absolute;
+  bottom: 0;
+  left: 28%;
+}
+
+.lose {
+  position: absolute;
+  left: 40%;
+  top: 80%;
+
+  font-family: 'Pangolin';
+  font-weight: 400;
+  font-size: 15%;
+  line-height: 100%;
+  z-index: 3;
+
+
+color: #FFFFFF; }

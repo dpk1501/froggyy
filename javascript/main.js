@@ -15,6 +15,13 @@ $(document).ready(function(){
       });
     });
     });
+    $(document).ready(() => {
+      $('.start').on('click', () => {
+        $('.block2').show();
+        $('.block1').hide();
+        let obstacleInterval = setInterval(moveObstacle, 5);
+      });
+    })
 
 // ГЛАЗА
 
@@ -111,13 +118,6 @@ function moveObstacle() {
     }
 }
 
-$(document).ready(() => {
-  $('.start').on('click', () => {
-    $('.block2').show();
-    $('.block1').hide();
-    let obstacleInterval = setInterval(moveObstacle, 5);
-  });
-})
 
 
 window.setInterval(function(){
@@ -128,7 +128,7 @@ window.setInterval(function(){
       'background-color' : randomColor,
     });
 
-  }, 2000);
+  }, 3000);
 
 
 // ПРЫЖКИ ПО КЛИКУ И НАЖАТИЮ
@@ -143,7 +143,26 @@ document.addEventListener('keydown', control);
 
 
 // ПЕРВАЯ МИНИ ИГРА
-  
+$('#red') = setTimeout (() => {
+  setInterval(function(){
+    $(this).css('background', 'grey');
+  }, 2900);
+});
+
+setInterval(function(){
+  $('#yellow').css('background', 'yellow');
+}, 3000);
+setInterval(function(){
+  $('#yellow').css('background', 'grey');
+}, 4900);
+setInterval(function(){
+  $('#green').css('background', 'lime');
+}, 5000);
+setInterval(function(){
+  $('#green').css('background', 'grey');
+}, 7000);
+
+
 $(function() {
   $('.one').click(function(){
     $(this).css('background', 'red');
@@ -158,15 +177,34 @@ $(function() {
   });
 } );
 
+setTimeout(function(){
+  $('.speechbubble').show();
+}, 7000);
+
+$('.cross').click(function(){
+   $('.speechbubble').hide();
+  });
+
+
 $( function() {
   $( "#pull" ).draggable({
     containment: "#bar"
   }); 
 } );
 
+$('.one' && '.two' && '.white' && '.orange' && '.lime' && '.green').click(function(){
+  $('.block3').hide();
+  $('.block2').show();
+});
+
+
+
 
 // ВТОРАЯ МИНИ ИГРА
-
+if (characterLeft >= obstacleLeft - characterWidth && characterLeft <= obstacleLeft + obstacleWidth && characterBottom <= obstacleBottom + obstacleHeight){
+  $('.block2').show();
+  $('.block4').hide();
+}
 
 // ТРЕТЬЯ МИНИ ИГРА
 $('player').keydown(function(event) {

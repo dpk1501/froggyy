@@ -51,6 +51,11 @@
                     <div id="yellow"></div>
                     <div id="green"></div>
                 </div>
+
+                <div class="speechbubble" hidden>
+                    <h1 class="hurry">ПОТОРОПИСЬ, ПРОШУ!</h1>
+                    <div class="cross"></div>
+                </div>
     
                 <div class="squarebuttons">
                     <div class="buttonbox">
@@ -71,10 +76,10 @@
                 </div>
 
                 <div class="roundbuttons">
-                    <div class="rbutton white"></div>
-                    <div class="rbutton orange"></div>
-                    <div class="rbutton lime"></div>
-                    <div class="rbutton green"></div>
+                    <img src="images/white.svg" class="rbutton white" onclick="this.src='images/whiteq.svg'">
+                    <img src="images/orange.svg" class="rbutton orange" onclick="this.src='images/orangeq.svg'">
+                    <img src="images/lime.svg" class="rbutton lime" onclick="this.src='images/limeq.svg'">
+                    <img src="images/green.svg" class="rbutton green" onclick="this.src='images/greenq.svg'">
                 </div>
 
                 <div class="lever">
@@ -85,9 +90,41 @@
                 <div id="froggy"></div>   
 
             </div> 
+
+
+            <!-- ВТОРАЯ МИНИ ИГРА -->
+            <div class="block4" hidden>
+
+
+            </div>
+
+
+            <div class="block5">
+
+                <div class="player"></div>
+                <div class="enemy"></div>
+
+            </div>
+
+
+            <div class="block6" hidden>
+
+                <h1 class="lose">ВЫ ПРОИГРАЛИ(((</h1>
+
+                <div class="sadfrog"></div>
+        
+                <div class="leaf"></div>
+                <div class="leaf1"></div>
+                <div class="leaf2"></div>
+                <div class="leaf3"></div>
+                <div class="leaf4"></div>
+
+            </div>
+
+
+    
         <script src="javascript/jquery-3.6.3.js" charset="utf-8"></script>
         <script src="javascript/main.js"></script>
-        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     </body>
 
 </html>
