@@ -2,6 +2,7 @@ html {
   cursor: url("../images/default_cursor.svg"), default;
 }
 
+
 body, html {
   font-size: 23vw;
   line-height: 409px;
@@ -408,8 +409,8 @@ height: auto;
   position: absolute;
   width: 15%;
   height: 70%;
-  left: 13%;
-  top: 15%;
+  left: 0%;
+  top: 50%;
   z-index: 3;
   
   background: #FFFFFF;
@@ -506,7 +507,7 @@ height: auto;
 }
 
 
-.block5 {
+.block6 {
   width: 100vw;
   height: 100vh;
   background-image: url('../images/stars.svg');
@@ -524,10 +525,40 @@ height: auto;
   left: 28%;
 }
 
+.tear {
+  background: url('../images/tear.svg');
+  background-size: 100% 100%;
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top: 10%;
+  left: 28%;
+
+  animation: tear 3s infinite ease ;
+}
+
+@keyframes tear {
+  0% {top: 10%; opacity: 100%;}
+  100% {top: 40%; opacity: 0%;}
+}
 .lose {
   position: absolute;
-  left: 40%;
-  top: 80%;
+  left: 20%;
+  top: 70%;
+
+  font-family: 'Pangolin';
+  font-weight: 400;
+  font-size: 30%;
+  line-height: 100%;
+  z-index: 3;
+
+
+color: #FFFFFF; }
+
+.restart {
+  position: absolute;
+  left: 35%;
+  top: 90%;
 
   font-family: 'Pangolin';
   font-weight: 400;

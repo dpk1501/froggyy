@@ -1,5 +1,6 @@
 // ГЛАВНЫЙ ЭКРАН И СМЕНЫ ЭКРАНА
 
+
 $(document).ready(function(){
     $(".frog").mousemove(function(event) {
       let eye = $(".eye");
@@ -118,9 +119,8 @@ function moveObstacle() {
           $('.block3').show();
           $('.block2').hide();
         }
-        else if {
-          //alert('greenClicked: ' + greenClicked);
-          alert('heyy');
+        else {
+          return false;
         }
     }
 }
