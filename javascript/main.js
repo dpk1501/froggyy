@@ -144,18 +144,36 @@ document.addEventListener('keydown', control);
 
 // ПЕРВАЯ МИНИ ИГРА
 
+setTimeout(function () {
+  setInterval(function(){
+    $('#red').css('background', 'grey');
+  }, 1000);
+  })
+setTimeout(function () {
 setInterval(function(){
   $('#yellow').css('background', 'yellow');
-}, 3000);
-setInterval(function(){
-  $('#yellow').css('background', 'grey');
-}, 4900);
-setInterval(function(){
-  $('#green').css('background', 'lime');
-}, 5000);
-setInterval(function(){
-  $('#green').css('background', 'grey');
-}, 7000);
+}, 1000);
+})
+setTimeout(function () {
+  setInterval(function(){
+    $('#yellow').css('background', 'grey');
+  }, 3000);
+  })
+  setTimeout(function () {
+    setInterval(function(){
+      $('#green').css('background', 'green');
+    }, 3000);
+    })
+    setTimeout(function () {
+      setInterval(function(){
+        $('#green').css('background', 'grey');
+      }, 5000);
+      })
+    setTimeout(function () {
+      setInterval(function(){
+        $('#red').css('background', 'red');
+      }, 5000);
+      })
 
 
 $(function() {
