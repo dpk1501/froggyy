@@ -98,6 +98,7 @@ let obstacleBottom = 150;
 let obstacleWidth = 30;
 let obstacleHeight = Math.floor(Math.random() * 50) + 50;
 
+let greenClicked = 0
 
 function moveObstacle() {
     let obstacle = document.querySelector('.obstacle');
@@ -113,8 +114,14 @@ function moveObstacle() {
     }
 
     if (characterLeft >= obstacleLeft - characterWidth && characterLeft <= obstacleLeft + obstacleWidth && characterBottom <= obstacleBottom + obstacleHeight){
-        $('.block3').show();
-        $('.block2').hide();
+        if (greenClicked == 0) {
+          $('.block3').show();
+          $('.block2').hide();
+        }
+        else if {
+          //alert('greenClicked: ' + greenClicked);
+          alert('heyy');
+        }
     }
 }
 
@@ -177,23 +184,25 @@ $('.cross').click(function(){
 $( function() {
   $( "#pull" ).draggable({
     containment: "#bar"
-  }); 
+  });
 } );
 
 
+// ВТОРАЯ МИНИ ИГРА
 $('.green').click(function(){
+  greenClicked += 1;
   $('.block3').hide();
   $('.block2').show();
+
+  let obstacleLeft = 2000;
+  let obstacleBottom = 150;
+  let obstacleWidth = 30;
+  let obstacleHeight = Math.floor(Math.random() * 50) + 50;
+  let obstacleInterval = setInterval(moveObstacle, 5);
  });
 
 
 
-// ВТОРАЯ МИНИ ИГРА
-if ($('.green').data('clicked') && characterLeft >= obstacleLeft - characterWidth && characterLeft <= obstacleLeft + obstacleWidth && characterBottom <= obstacleBottom + obstacleHeight){
-  alert(heyy);
-  $('.block2').show();
-  $('.block4').hide();
-}
 
 // ТРЕТЬЯ МИНИ ИГРА
 $('player').keydown(function(event) {
