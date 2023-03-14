@@ -149,31 +149,6 @@ setTimeout(function () {
     $('#red').css('background', 'grey');
   }, 1000);
   })
-setTimeout(function () {
-setInterval(function(){
-  $('#yellow').css('background', 'yellow');
-}, 1000);
-})
-setTimeout(function () {
-  setInterval(function(){
-    $('#yellow').css('background', 'grey');
-  }, 3000);
-  })
-  setTimeout(function () {
-    setInterval(function(){
-      $('#green').css('background', 'green');
-    }, 3000);
-    })
-    setTimeout(function () {
-      setInterval(function(){
-        $('#green').css('background', 'grey');
-      }, 5000);
-      })
-    setTimeout(function () {
-      setInterval(function(){
-        $('#red').css('background', 'red');
-      }, 5000);
-      })
 
 
 $(function() {
