@@ -181,12 +181,16 @@ $( function() {
 } );
 
 
-
+$('.green').click(function(){
+  $('.block3').hide();
+  $('.block2').show();
+ });
 
 
 
 // ВТОРАЯ МИНИ ИГРА
-if (characterLeft >= obstacleLeft - characterWidth && characterLeft <= obstacleLeft + obstacleWidth && characterBottom <= obstacleBottom + obstacleHeight){
+if ($('.green').data('clicked') && characterLeft >= obstacleLeft - characterWidth && characterLeft <= obstacleLeft + obstacleWidth && characterBottom <= obstacleBottom + obstacleHeight){
+  alert(heyy);
   $('.block2').show();
   $('.block4').hide();
 }

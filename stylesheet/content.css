@@ -410,6 +410,7 @@ height: auto;
   height: 70%;
   left: 13%;
   top: 15%;
+  z-index: 3;
   
   background: #FFFFFF;
 }
@@ -422,6 +423,7 @@ height: auto;
   height: 50%;
   left: 13%;
   top: 24%;
+  z-index: 2;
 }
 
 #froggy {
