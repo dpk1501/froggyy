@@ -4,6 +4,7 @@ html {
 
 
 body, html {
+  width: 1440px;
   font-size: 23vw;
   line-height: 409px;
   display: block;
@@ -437,6 +438,138 @@ height: auto;
   right: 5%;
 }
 
+/* ВТОРАЯ МИНИ ИГРА */
+
+.block4 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/stars.svg');
+  display: hidden;
+  overflow: hidden;
+}
+
+
+.helpfrog{
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+
+  font-family: 'Pangolin';
+  font-weight: 400;
+  font-size: 15%;
+  line-height: 100%;
+  z-index: 0;
+
+
+  color: #FFFFFF; }
+
+.ewleaf1 {
+  background-image: url('../images/ewleaf1.svg');
+  background-size: 100% 100%;
+  width: 40%;
+  height: 40%;
+}
+.ewleafimposter {
+  background-image: url('../images/ewleaf1.svg');
+  background-size: 100% 100%;
+  width: 60%;
+  height: 60%;
+}
+.ewleaf2 {
+  background-image: url('../images/ewleaf2.svg');
+  background-size: 100% 100%;
+  width: 40%;
+  height: 40%;
+}
+.ewleaf3 {
+  background-image: url('../images/ewleaf3.svg');
+  background-size: 100% 100%;
+  width: 80%;
+  height: 80%;
+}
+
+.uberi1 {
+  position: absolute;
+  top: -3%;
+  left: -4;
+}
+.uberi2 {
+  position: absolute;
+  top: 20%;
+  right: -15%;
+  transform: rotate(90deg);
+}
+
+.uberi3 {
+  position: absolute;
+  top: 60%;
+  left: -14%;
+  transform: rotate(-90deg);
+}
+
+.uberi4 {
+  position: absolute;
+  left: 40%;
+  bottom: 0%;
+  transform: rotate(180deg);
+}
+.uberi5 {
+  position: absolute;
+  left: 10%;
+  bottom: 0%;
+  transform: rotate(180deg);
+}
+
+.ubral1 {
+  position: absolute;
+  left: 70%;
+  bottom: 0%;
+  transform: rotate(180deg);
+}
+
+.ubral2 {
+  position: absolute;
+  left: 70%;
+  top: 0%;
+}
+.ubral3 {
+  position: absolute;
+  left: 20%;
+  top: 0%;
+}
+
+.ubral4 {
+  position: absolute;
+  left: -15%;
+  top: 15%;
+  transform: scale(10%);
+  transform: rotate(-90deg);
+}
+
+.uberu1 {
+  position: absolute;
+  left: -20%;
+  bottom: -10%;
+  transform: rotate(-90deg);
+}
+.uberu2 {
+  position: absolute;
+  bottom: -20%;
+  right: -10%;
+  transform: rotate(-90deg);
+}
+.uberu3 {
+  position: absolute;
+  right: -30%;
+  top: 15%;
+  transform: rotate(180deg);
+}
+.uberu4 {
+  position: absolute;
+  left: 25%;
+  top: -10%;
+  transform: rotate(90deg);
+}
 
 /* ТРЕТЬЯ МИНИ ИГРА */
 
@@ -507,6 +640,7 @@ height: auto;
 }
 
 
+/* ЭКРАН ВЫИГРЫША */
 .block6 {
   width: 100vw;
   height: 100vh;
@@ -515,8 +649,22 @@ height: auto;
   overflow: hidden;
 }
 
-.sadfrog {
-  background: url('../images/sadfrog.svg');
+.win {
+  position: absolute;
+  left: 20%;
+  top: 70%;
+
+  font-family: 'Pangolin';
+  font-weight: 400;
+  font-size: 30%;
+  line-height: 100%;
+  z-index: 3;
+
+
+color: #FFFFFF; }
+
+.happyfrog {
+  background: url('../images/happyfrog.svg');
   background-size: 100% 100%;
   width: 42%;
   height: 94%;
@@ -524,7 +672,6 @@ height: auto;
   bottom: 0;
   left: 28%;
 }
-
 .tear {
   background: url('../images/tear.svg');
   background-size: 100% 100%;
@@ -541,30 +688,3 @@ height: auto;
   0% {top: 10%; opacity: 100%;}
   100% {top: 40%; opacity: 0%;}
 }
-.lose {
-  position: absolute;
-  left: 20%;
-  top: 70%;
-
-  font-family: 'Pangolin';
-  font-weight: 400;
-  font-size: 30%;
-  line-height: 100%;
-  z-index: 3;
-
-
-color: #FFFFFF; }
-
-.restart {
-  position: absolute;
-  left: 35%;
-  top: 90%;
-
-  font-family: 'Pangolin';
-  font-weight: 400;
-  font-size: 15%;
-  line-height: 100%;
-  z-index: 3;
-
-
-color: #FFFFFF; }

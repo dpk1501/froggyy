@@ -35,6 +35,12 @@
       width: 1024px;
     height: 750px;
     }
+
+  .frog {
+    left: 20%;
+    width: 60%;
+    height: 85%;
+      }
   }
   
   /* экран для 834 */
@@ -46,4 +52,11 @@
     /* height: 303vh; */
     line-height: 238px;
   }
+
+  .frog {
+    left: 20%;
+    width: 60%;
+    height: 90%;
+  
+      }
   }  
