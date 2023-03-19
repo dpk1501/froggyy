@@ -75,7 +75,7 @@ let downTime;
 function jump() {
     if(isJumping) return;
     upTime = setInterval(() => {
-        if(characterBottom >= groundHeight + 250){
+          if(characterBottom >= groundHeight + 250){
             clearInterval(upTime);
             downTime = setInterval(() => {
                 if(characterBottom <= groundHeight + 10){
@@ -84,12 +84,12 @@ function jump() {
                 }
                 characterBottom -= 10;
                 character.style.bottom = characterBottom +'px';
-                }, 20);
-        }
-characterBottom += 10;
-character.style.bottom = characterBottom + 'px';
-isJumping = true;
-}, 20);
+            }, 20);
+          }
+          characterBottom += 10;
+          character.style.bottom = characterBottom + 'px';
+          isJumping = true;
+    }, 20);
 }
 
 // препятствия
@@ -125,6 +125,8 @@ function moveObstacle() {
           $('.block2').hide();
         }
         else {
+          triangleTop = -100;
+          let triangleInterval = setInterval(moveTriangle, 50);
           $('.block5').show();
           $('.block2').hide();
         }
@@ -161,13 +163,13 @@ document.addEventListener('keydown', control);
 
   setInterval(function(){
     $('#red').css('background', 'grey');
-  }, 500); 
+  }, 500);
   setInterval(function(){
     $('#green').css('background', 'lime');
-  }, 1000); 
+  }, 1000);
   setInterval(function(){
     $('#yellow').css('background', 'yellow');
-  }, 1000); 
+  }, 1000);
   setInterval(function(){
     $('#red').css('background', 'red');
   }, 1300);
@@ -286,8 +288,8 @@ window.addEventListener('load', () => {
 //     player.style.left = playerLeft + 'px';
 //     isMoving = true;
 //     }, 20); }
-  
-  
+
+
 
 let playerLeft = 0;
 let playerBottom = 0;
@@ -335,8 +337,8 @@ function moveTriangle() {
 
   function detectHit(triangleLeft){
     if (playerLeft >= triangleLeft - 50 && playerLeft <= triangleLeft + 50 && triangleTop >= 900) {
-      // $('.block6').show();
-      // $('.block5').hide();
+      $('.block6').show();
+      $('.block5').hide();
     }
   }
 
@@ -357,6 +359,3 @@ function moveTriangle() {
   }
 
 }
-
-let triangleInterval = setInterval(moveTriangle, 50);
-

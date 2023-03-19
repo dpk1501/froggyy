@@ -24,6 +24,15 @@ body, html {
   display: block;
   overflow: hidden;
 }
+.bubblespeech {
+  background: url('../images/bubblespeech.svg');
+  background-size: 100% 100%;
+  width: 30%;
+  height: 40%;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
 .frog {
   background: url('../images/frog.svg');
   background-size: 100% 100%;
@@ -31,35 +40,36 @@ body, html {
   height: 94%;
   position: absolute;
   bottom: 0;
-  left: 28%;
+  left: 15%;
 }
 
 .help {
   position: absolute;
-  left: 13%;
-  bottom: 25%;
+  left: 2%;
+  top: 20%;
+  text-align: center;
   
   font-family: 'Pangolin';
   font-weight: 400;
-  font-size: 15%;
+  font-size: 9%;
   line-height: 100%;
   
-  color: #FFFFFF;
+  color: black;
   z-index: 3; 
 }
 .start {
   position: absolute;
-  left: 40%;
-  top: 80%;
+  left: 35%;
+  bottom: 35%;
+  text-align: center;
 
   font-family: 'Pangolin';
   font-weight: 400;
-  font-size: 15%;
+  font-size: 10%;
   line-height: 100%;
   z-index: 3;
 
-
-color: #FFFFFF; }
+  color: black; }
 
 .eye1 {
   position: absolute;
@@ -130,10 +140,10 @@ color: #FFFFFF; }
   background: url('../images/leaf2.svg');
   background-size: 100% 100%;
   position: absolute;
-  width: 45%;
-  height: 45%;
-  left: 58%;
-  bottom: 5%;
+  width: 50%;
+  height: 50%;
+  right: 5%;
+  bottom: 2%;
 }
 .leaf2:hover {
   transform: rotate(180deg);
@@ -152,9 +162,9 @@ color: #FFFFFF; }
   background: url('../images/leaf4.svg');
   background-size: 100% 100%;
   position: absolute;
-  width: 35%;
-  height: 35%;
-  left: -10%;
+  width: 50%;
+  height: 50%;
+  left: -12%;
   bottom: -1%;
 }
 
@@ -408,19 +418,18 @@ height: auto;
 
 #pull {
   position: absolute;
-  width: 15%;
-  height: 70%;
-  left: 0%;
-  top: 50%;
+  width: 20%;
+  height: 120%;
   z-index: 3;
   
-  background: #FFFFFF;
+  background: white;
 }
 
 #bar {
   background-image: url(../images/bar.svg);
   background-size: 100% 100%;
   position: absolute;
+  overflow: hidden;
   width: 75%;
   height: 50%;
   left: 13%;
@@ -464,26 +473,17 @@ height: auto;
   color: #FFFFFF; }
 
 .ewleaf1 {
-  background-image: url('../images/ewleaf1.svg');
-  background-size: 100% 100%;
   width: 40%;
   height: 40%;
-}
-.ewleafimposter {
-  background-image: url('../images/ewleaf1.svg');
-  background-size: 100% 100%;
-  width: 60%;
-  height: 60%;
+  object-fit: contain;
 }
 .ewleaf2 {
-  background-image: url('../images/ewleaf2.svg');
-  background-size: 100% 100%;
+  object-fit: contain;
   width: 40%;
   height: 40%;
 }
 .ewleaf3 {
-  background-image: url('../images/ewleaf3.svg');
-  background-size: 100% 100%;
+  object-fit: contain;
   width: 80%;
   height: 80%;
 }
