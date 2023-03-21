@@ -298,6 +298,28 @@ body, html {
   z-index: 4;
 }
 
+.speechbubble1 {
+  background-image: url('../images/speechbubble.svg');
+  background-size: 100% 100%;
+  position: absolute;
+  width: 30%;
+  height: 15%;
+  right: 10%;
+  bottom: 18%;
+  z-index: 3;
+}
+
+.continue {
+  position: absolute;
+  bottom: 55%;
+  left: 28%;
+  font-family: 'Pangolin';
+  font-weight: 400;
+  font-size: 7%;
+  line-height: 100%;
+  z-index: 4;
+}
+
 .squarebuttons {
   position: absolute;
   padding-top: 14%;
@@ -457,35 +479,57 @@ height: auto;
   overflow: hidden;
 }
 
+.continuefrog {
+  background-image: url('../images/character.svg');
+  background-size: cover;
+  width: 88px;
+  height: 82px;
+  position: absolute;
+  bottom: 0; 
+  right: 5%; 
+}
+
+.bubblepop {
+  background: url('../images/speechbubble.svg');
+  background-size: 100% 100%;
+  position: absolute;
+  width: 30%;
+  height: 15%;
+  right: 10%;
+  bottom: 18%;
+  z-index: 3; }
 
 .helpfrog{
   position: absolute;
-  left: 40%;
-  bottom: 0;
+  left: 27%;
+  top: 15%;
 
   font-family: 'Pangolin';
   font-weight: 400;
-  font-size: 15%;
+  font-size: 10%;
   line-height: 100%;
   z-index: 0;
 
 
-  color: #FFFFFF; }
+  color: black; }
 
 .ewleaf1 {
   width: 40%;
   height: 40%;
   object-fit: contain;
+  display: block;
 }
 .ewleaf2 {
   object-fit: contain;
   width: 40%;
   height: 40%;
+  display: block;
 }
 .ewleaf3 {
   object-fit: contain;
   width: 80%;
   height: 80%;
+  display: block;
 }
 
 .uberi1 {
@@ -651,17 +695,18 @@ height: auto;
 
 .win {
   position: absolute;
-  left: 20%;
-  top: 70%;
+  left: 10%;
+  top: 20%;
 
   font-family: 'Pangolin';
   font-weight: 400;
-  font-size: 30%;
+  font-size: 10%;
   line-height: 100%;
   z-index: 3;
+  align-items: center;
 
 
-color: #FFFFFF; }
+  color: black; }
 
 .happyfrog {
   background: url('../images/happyfrog.svg');
@@ -670,8 +715,20 @@ color: #FFFFFF; }
   height: 94%;
   position: absolute;
   bottom: 0;
-  left: 28%;
+  left: 15%;
 }
+
+.thankyou {
+  background: url('../images/bubblespeech.svg');
+  background-size: 100% 100%;
+  width: 30%;
+  height: 35%;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  align-items: center;
+}
+
 .tear {
   background: url('../images/tear.svg');
   background-size: 100% 100%;
