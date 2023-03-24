@@ -224,9 +224,6 @@ $(document).ready(function(){
    $('.ewleaf3').click(function(){
     $(this).hide();
    });
-   $('.ewleafimposter').click(function(){
-    $(this).hide();
-   });
 
    $('.uberi1').click(function(){
     $('.bubblepop').show();

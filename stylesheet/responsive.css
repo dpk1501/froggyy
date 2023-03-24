@@ -2,18 +2,13 @@
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
     body, html {
       line-height: 494px;
-      width: 1920px;
-      height: 1080px;
     }
   }
   
   /* экран для 1440 */
   @media screen and (min-width: 1280px) and (max-width: 1440px) {
     body, html {
-      /* height: 477vh; */
       line-height: 409px;
-      width: 1440px;
-      height: 900px;
     }
   }
   
@@ -25,38 +20,224 @@
       width: 1280px;
       height: 900px;
     }
+
   }
   
-  /* экран для 1024 */
+
 @media screen and (min-width: 834px) and (max-width: 1024px) {
     body, html {
-      /* height: 361vh; */
+
       line-height: 294px;
-      width: 1024px;
-    height: 750px;
     }
 
   .frog {
-    left: 20%;
-    width: 60%;
-    height: 85%;
+    left: 15%;
+    width: 56%;
+    height: 80%;
       }
-  }
+      .eye1 {
+        left: 28%;
+        padding-top: 13%;
+        width: 13%;
+        height: auto;
+      }
+      .eye2 {
+        right: 19%;
+        padding-top: 13%;
+        width: 13%;
+        height: auto;
+      }
+
+      .bubblespeech {
+        right: 3%;
+        z-index: 3;
+      }
+
+      .help {
+        top: 30%;
+      }
+    }
   
-  /* экран для 834 */
+
   @media screen and (min-width: 414px) and (max-width: 834px) {
   
     body, html {
-        width: 834px;
-        height: 600px;
-    /* height: 303vh; */
-    line-height: 238px;
+      line-height: 238px;
+      overflow: hidden;
   }
-
-  .frog {
-    left: 20%;
-    width: 60%;
-    height: 90%;
-  
+  .happyfrog {
+    left: 10%;
+    width: 67%;
+    height: 65%;
+    z-index: 1;
       }
-  }  
+
+    .frog {
+      left: 10%;
+      width: 67%;
+      height: 65%;
+      z-index: 1;
+        }
+
+      .eye1 {
+        left: 22%;
+        width: 17%;
+        height: auto;
+      }
+      .eye2 {
+        right: 9%;
+        width: 17%;
+        height: auto;
+      }
+    
+    .leaf1 {
+      width: 60%;
+      height: 60%;
+    }
+
+    .leaf {
+      width: 35%;
+      height: 35%;
+      top: -10%;
+    }
+
+    .leaf4 {
+      bottom: -10%;
+      z-index: 0;
+    }
+
+    .leaf4 {
+      bottom: -10%;
+      z-index: 3;
+    }
+
+
+    .thankyou {
+      width: 50%;
+      height: 50%;
+      top: -5%;
+      right: 6%;
+      z-index: 3;
+    }
+
+    .bubblespeech {
+      width: 50%;
+      height: 50%;
+      top: -5%;
+      right: 6%;
+      z-index: 3;
+    }
+
+    .win {
+      top: 35%;
+      font-size: 18%;
+      top: 34%;
+    }
+
+    .help {
+      top: 30%;
+      font-size: 13%;
+      top: 34%;
+    }
+
+    .start {
+      bottom: 42%;
+      font-size: 20%;
+      left: 30%;
+    }
+    .trafficlight {
+      bottom: -3%;
+      width: 45%;
+      height: 55%;
+      left: 25%;
+    }
+
+    #red {
+      padding-top: 35%;
+      width: 35%;
+      height: auto;
+      left: 31%;
+      top: 12%;
+    }
+    #yellow {
+      padding-top: 35%;
+      width: 35%;
+      height: auto;
+      left: 31%;
+      top: 14%;
+    }
+    #green {
+      padding-top: 35%;
+      width: 35%;
+      height: auto;
+      left: 31%;
+      top: 16%;
+    }
+
+    #froggy {
+      right: 30%;
+      top: 43%;
+      width: 7%;
+      height: 7%;
+    }
+
+    .speechbubble {
+      top: 24%;
+      left: 15%;
+      width: 50%;
+      height: 20%;
+    }
+
+    .speechbubble1 {
+      top: 24%;
+      left: 15%;
+      width: 50%;
+      height: 20%;
+    }
+
+    .continue {
+      left: 15%;
+      font-size: 20%;
+    }
+
+    .hurry {
+      left: 15%;
+      font-size: 14%;
+    }
+
+    .cross {
+      width: 14%;
+      height: 14%;
+      right: 0%;
+      top: 13%;
+    }
+
+    .squarebuttons {
+      padding-top: 25%;
+      top: 5%;
+      width: 25%;
+      left: 5%;
+      height: auto;
+    }
+    .roundbuttons {
+      padding-top: 25%;
+      top: 5%;
+      width: 25%;
+      left: 40%;
+      height: auto;
+    }
+    .lever {
+      padding-top: 25%;
+      top: 5%;
+      width: 25%;
+      left: 70%;
+      height: auto;
+    }
+
+    .helpfrog {
+      font-size: 15%;
+      top: 29%;
+      left: 14%;
+    }
+
+}
