@@ -3,6 +3,19 @@
     body, html {
       line-height: 494px;
     }
+    .eye1 {
+      padding-top: 19%;
+      left: 19%;
+      width: 19%;
+      height: auto;
+    }
+    .eye2 {
+      padding-top: 19%;
+      right: 5%;
+      width: 19%;
+      height: auto;
+    }
+
   }
   
   /* экран для 1440 */

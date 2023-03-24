@@ -260,31 +260,6 @@ $(document).ready(function(){
       player.style.bottom = 0;
   });
 
-  // let playerLeft = parseInt(window.getComputedStyle(player).getPropertyValue ('left'));
-  // let isMoving;
-  // let uppTime;
-  // let downnTime;
-
-  // function movecharacter() {
-  //   if(isMoving) return;
-  //   uppTime = setInterval(() => {
-  //       if(playerLeft >= 0){
-  //           clearInterval(uppTime);
-  //           downnTime = setInterval(() => {
-  //               if(playerLeft <= 0){
-  //                   clearInterval(downnTime);
-  //                   isMoving = false;
-  //               }
-  //               playerLeft -= 0;
-  //               player.style.left = playerLeft +'px';
-  //               }, 20);
-  //       }
-  //     playerLeft += 10;
-  //     player.style.left = playerLeft + 'px';
-  //     isMoving = true;
-  //     }, 20); }
-
-
 
   let playerLeft = 0;
   let playerBottom = 0;
