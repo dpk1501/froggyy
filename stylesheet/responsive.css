@@ -4,15 +4,15 @@
       line-height: 494px;
     }
     .eye1 {
-      padding-top: 19%;
+      padding-top: 20%;
       left: 19%;
-      width: 19%;
+      width: 20%;
       height: auto;
     }
     .eye2 {
-      padding-top: 19%;
+      padding-top: 20%;
       right: 5%;
-      width: 19%;
+      width: 20%;
       height: auto;
     }
 
@@ -33,7 +33,6 @@
       width: 1280px;
       height: 900px;
     }
-
   }
   
 
@@ -45,19 +44,22 @@
 
   .frog {
     left: 15%;
-    width: 56%;
+    width: 40%;
     height: 80%;
+    bottom: -3%
       }
       .eye1 {
-        left: 28%;
-        padding-top: 13%;
-        width: 13%;
+        top: 1%;
+        left: 19%;
+        padding-top: 75px;
+        width: 75px;
         height: auto;
       }
       .eye2 {
-        right: 19%;
-        padding-top: 13%;
-        width: 13%;
+        top: 5%;
+        right: 8%;
+        padding-top: 75px;
+        width: 75px;
         height: auto;
       }
 
@@ -72,13 +74,17 @@
     }
   
 
-  @media screen and (min-width: 414px) and (max-width: 834px) {
+  @media screen and (min-width: 414px) and (max-width: 834px){
   
     body, html {
       line-height: 238px;
       overflow: hidden;
   }
+
+      
+
   .happyfrog {
+    background-size: 100%;
     left: 10%;
     width: 67%;
     height: 65%;
@@ -87,19 +93,24 @@
 
     .frog {
       left: 10%;
-      width: 67%;
-      height: 65%;
+      width: 300px;
+      height: 500px;
       z-index: 1;
+      bottom: -10%;
         }
 
       .eye1 {
-        left: 22%;
-        width: 17%;
+        top: 11%;
+        padding-top: 60px;
+        left: 17%;
+        width: 60px;
         height: auto;
       }
       .eye2 {
-        right: 9%;
-        width: 17%;
+        top: 14%;
+        padding-top: 60px;
+        right: 2%;
+        width: 60px;
         height: auto;
       }
     
@@ -252,5 +263,9 @@
       top: 29%;
       left: 14%;
     }
+
+}
+
+@media screen and (min-width: 320px) and (max-width:  414px) {
 
 }
