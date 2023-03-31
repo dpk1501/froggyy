@@ -19,7 +19,7 @@ body, html {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background-image: url('../images/stars.svg');
+  background: url('../images/stars.svg');
   display: block;
   overflow: hidden;
 }
@@ -175,7 +175,7 @@ body, html {
 .block2 {
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/stars.svg');
+  background: url('../images/stars.svg');
   display: hidden;
   overflow: hidden;
 }
@@ -189,7 +189,7 @@ body, html {
 }
 
 #character {
-  background-image: url('../images/character.svg');
+  background: url('../images/character.svg');
   background-size: cover;
   width: 88px;
   height: 82px;
@@ -219,13 +219,13 @@ body, html {
 .block3 {
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/stars.svg');
+  background: url('../images/stars.svg');
   display: hidden;
   overflow: hidden;
 }
 
 .trafficlight {
-  background-image: url('../images/trafficlight.svg');
+  background: url('../images/trafficlight.svg');
   background-size: 100% 100%;
   position: absolute;
   width: 44%;
@@ -270,7 +270,7 @@ body, html {
 }
 
 .speechbubble {
-  background-image: url('../images/speechbubble.svg');
+  background: url('../images/speechbubble.svg');
   background-size: 100% 100%;
   position: absolute;
   width: 30%;
@@ -280,7 +280,7 @@ body, html {
   z-index: 3;
 }
 .cross {
-  background-image: url('../images/cross.svg');
+  background: url('../images/cross.svg');
   background-size: 100% 100%;
   position: absolute;
   width: 20%;
@@ -301,7 +301,7 @@ body, html {
 }
 
 .speechbubble1 {
-  background-image: url('../images/speechbubble.svg');
+  background: url('../images/speechbubble.svg');
   background-size: 100% 100%;
   position: absolute;
   width: 30%;
@@ -450,7 +450,7 @@ height: auto;
 }
 
 #bar {
-  background-image: url(../images/bar.svg);
+  background: url(../images/bar.svg);
   background-size: 100% 100%;
   position: absolute;
   overflow: hidden;
@@ -462,7 +462,7 @@ height: auto;
 }
 
 #froggy {
-  background-image: url('../images/character.svg');
+  background: url('../images/character.svg');
   background-size: 100% 100%;
   width: 10%;
   height: 10%;
@@ -476,13 +476,13 @@ height: auto;
 .block4 {
   width: 100%;
   height: 100%;
-  background-image: url('../images/stars.svg');
+  background: url('../images/stars.svg');
   display: hidden;
   overflow: hidden;
 }
 
 .continuefrog {
-  background-image: url('../images/character.svg');
+  background: url('../images/character.svg');
   background-size: cover;
   width: 88px;
   height: 82px;
@@ -516,14 +516,14 @@ height: auto;
   color: black; }
 
 .ewleaf1 {
-  background-image: url('../images/ewleaf1.svg');
+  background: url('../images/ewleaf1.svg');
   background-size: 100% 100%;
   width: 40%;
   height: 40%;
   display: block;
 }
 .ewleaf2 {
-  background-image: url('../images/ewleaf2.svg');
+  background: url('../images/ewleaf2.svg');
   background-size: 100% 100%;
   width: 40%;
   height: 40%;
@@ -531,7 +531,7 @@ height: auto;
   object-fit: cover;
 }
 .ewleaf3 {
-  background-image: url('../images/ewleaf3.svg');
+  background: url('../images/ewleaf3.svg');
   background-size: 100% 100%;
   width: 60%;
   height: 60%;
@@ -625,7 +625,7 @@ height: auto;
 .block5 {
   width: 100%;
   height: 100%;
-  background-image: url('../images/stars.svg');
+  background: url('../images/stars.svg');
   display: hidden;
   overflow: hidden;
 }
@@ -634,7 +634,7 @@ height: auto;
   position: absolute;
   top: 10%;
   left: 10%;
-  background-image: url('../images/triangle.svg');
+  background: url('../images/triangle.svg');
   background-size: 100% 100%;
   width: 10%;
   height: 10%;
@@ -643,7 +643,7 @@ height: auto;
   position: absolute;
   top: 10%;
   left: 10%;
-  background-image: url('../images/triangle.svg');
+  background: url('../images/triangle.svg');
   background-size: 100% 100%;
   width: 10%;
   height: 10%;
@@ -652,7 +652,7 @@ height: auto;
   position: absolute;
   top: 10%;
   left: 10%;
-  background-image: url('../images/triangle.svg');
+  background: url('../images/triangle.svg');
   background-size: 100% 100%;
   width: 10%;
   height: 10%;
@@ -662,7 +662,7 @@ height: auto;
   position: absolute;
   top: 10%;
   left: 10%;
-  background-image: url('../images/triangle.svg');
+  background: url('../images/triangle.svg');
   background-size: 100% 100%;
   width: 10%;
   height: 10%;
@@ -672,14 +672,14 @@ height: auto;
   position: absolute;
   top: 10%;
   left: 10%;
-  background-image: url('../images/triangle.svg');
+  background: url('../images/triangle.svg');
   background-size: 100% 100%;
   width: 10%;
   height: 10%;
 }
 
 .player {
-  background-image: url('../images/character.svg');
+  background: url('../images/character.svg');
   background-size: 100% 100%;
   width: 10%;
   height: 10%;
@@ -693,7 +693,7 @@ height: auto;
 .block6 {
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/stars.svg');
+  background: url('../images/stars.svg');
   display: hidden;
   overflow: hidden;
 }
